@@ -90,7 +90,7 @@ if(!function_exists('deasil_load_admin_styles')) {
 		}  
 		
 	} 
-	add_action( 'admin_enqueue_scripts', 'deasil_load_admin_styles' );
+	// add_action( 'admin_enqueue_scripts', 'deasil_load_admin_styles' );
 }
 
 /**
@@ -106,7 +106,7 @@ if(!function_exists('deasil_enqueue_styles_scripts_plugin')) {
 		wp_enqueue_script('waypoint', DEASIL_CORE_BASE_URL  . 'js/jquery.waypoints.js', array('jquery'), '', false);
 		wp_enqueue_script('counterup', DEASIL_CORE_BASE_URL . 'js/countnumbers.js',  array('waypoint'), '', false);
 	}
-	add_action('wp_enqueue_scripts', 'deasil_enqueue_styles_scripts_plugin', 200);
+	// add_action('wp_enqueue_scripts', 'deasil_enqueue_styles_scripts_plugin', 200);
 }
 
 

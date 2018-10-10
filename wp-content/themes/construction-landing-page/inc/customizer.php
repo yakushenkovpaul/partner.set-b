@@ -458,6 +458,218 @@ function construction_landing_page_customize_register( $wp_customize ) {
     );
 
 
+		/** About Section */
+
+		$wp_customize->add_section(
+
+			'construction_landing_page_about2_settings',
+
+			array(
+
+					'title' => __( 'About Section 2', 'construction-landing-page' ),
+
+					'priority' => 20,
+
+					'panel' => 'construction_landing_page_home_page_settings',
+
+			)
+
+		);
+
+
+
+		/** Enable/Disable about Section */
+
+		$wp_customize->add_setting(
+
+			'construction_landing_page_ed_about2_section',
+
+			array(
+
+					'default' => '',
+
+					'sanitize_callback' => 'construction_landing_page_sanitize_checkbox',
+
+			)
+
+		);
+
+
+
+		$wp_customize->add_control(
+
+			'construction_landing_page_ed_about2_section',
+
+			array(
+
+					'label' => __( 'Enable About Section', 'construction-landing-page' ),
+
+					'section' => 'construction_landing_page_about2_settings',
+
+					'type' => 'checkbox',
+
+			)
+
+		);
+
+
+
+		/** Section Page */
+
+		$wp_customize->add_setting(
+
+			'construction_landing_page_about2_section_page',
+
+			array(
+
+					'default' => '',
+
+					'sanitize_callback' => 'construction_landing_page_sanitize_select',
+
+			)
+
+		);
+
+
+
+		$wp_customize->add_control(
+
+			'construction_landing_page_about2_section_page',
+
+			array(
+
+					'label' => __( 'Select Page', 'construction-landing-page' ),
+
+					'description' => __( 'Title and description of selected page will display as section title and description.', 'construction-landing-page' ),
+
+					'description' => __( 'Title and description of selected page will display as section title and description.', 'construction-landing-page' ),
+
+					'section' => 'construction_landing_page_about2_settings',
+
+					'type' => 'select',
+
+					'choices' => $construction_landing_page_options_pages
+
+			)
+
+		);
+
+
+
+
+
+		/** Post One */
+
+		$wp_customize->add_setting(
+
+			'construction_landing_page_about2_post_one',
+
+			array(
+
+					'default' => '',
+
+					'sanitize_callback' => 'construction_landing_page_sanitize_select',
+
+			)
+
+		);
+
+
+
+		$wp_customize->add_control(
+
+			'construction_landing_page_about2_post_one',
+
+			array(
+
+					'label' => __( 'Select Post/Page One', 'construction-landing-page' ),
+
+					'section' => 'construction_landing_page_about2_settings',
+
+					'type' => 'select',
+
+					'choices' => $construction_landing_page_options_posts_pages,
+
+			)
+
+		);
+
+		
+
+		/** Post Two */
+
+		$wp_customize->add_setting(
+
+			'construction_landing_page_about2_post_two',
+
+			array(
+
+					'default' => '',
+
+					'sanitize_callback' => 'construction_landing_page_sanitize_select',
+
+			)
+
+		);
+
+
+
+		$wp_customize->add_control(
+
+			'construction_landing_page_about2_post_two',
+
+			array(
+
+					'label' => __( 'Select Post/Page Two', 'construction-landing-page' ),
+
+					'section' => 'construction_landing_page_about2_settings',
+
+					'type' => 'select',
+
+					'choices' => $construction_landing_page_options_posts_pages,
+
+			)
+
+		);
+
+
+
+		/** Post Three */
+
+		$wp_customize->add_setting(
+
+			'construction_landing_page_about2_post_three',
+
+			array(
+
+					'default' => '',
+
+					'sanitize_callback' => 'construction_landing_page_sanitize_select',
+
+			)
+
+		);
+
+
+
+		$wp_customize->add_control(
+
+			'construction_landing_page_about2_post_three',
+
+			array(
+
+					'label' => __( 'Select Post/Page Three', 'construction-landing-page' ),
+
+					'section' => 'construction_landing_page_about2_settings',
+
+					'type' => 'select',
+
+					'choices' => $construction_landing_page_options_posts_pages,
+
+			)
+
+		);
+
 
     /** Promotional Block Section */
 
@@ -661,6 +873,209 @@ function construction_landing_page_customize_register( $wp_customize ) {
 
     );
 
+
+		
+    /** Promotional Block Section */
+
+    $wp_customize->add_section(
+
+			'construction_landing_page_promotional2_block_settings',
+
+			array(
+
+					'title' => __( 'Promotional Block Section 2', 'construction-landing-page' ),
+
+					'priority' => 30,
+
+					'panel' => 'construction_landing_page_home_page_settings',
+
+			)
+
+	);
+
+	
+
+	/** Enable/Disable promotional2_block Section */
+
+	$wp_customize->add_setting(
+
+			'construction_landing_page_ed_promotional2_section',
+
+			array(
+
+					'default' => '',
+
+					'sanitize_callback' => 'construction_landing_page_sanitize_checkbox',
+
+			)
+
+	);
+
+	
+
+	$wp_customize->add_control(
+
+			'construction_landing_page_ed_promotional2_section',
+
+			array(
+
+					'label' => __( 'Enable Promotional Block Section', 'construction-landing-page' ),
+
+					'section' => 'construction_landing_page_promotional2_block_settings',
+
+					'type' => 'checkbox',
+
+			)
+
+	);
+
+
+
+	
+
+	/** Section Page */
+
+	$wp_customize->add_setting(
+
+			'construction_landing_page_promotional2_section_page',
+
+			array(
+
+					'default' => '',
+
+					'sanitize_callback' => 'construction_landing_page_sanitize_select',
+
+			)
+
+	);
+
+	
+
+	$wp_customize->add_control(
+
+			'construction_landing_page_promotional2_section_page',
+
+			array(
+
+					'label' => __( 'Select Page', 'construction-landing-page' ),
+
+					'description' => __( 'Title and description of selected page will display as section title and description.', 'construction-landing-page' ),
+
+					'section' => 'construction_landing_page_promotional2_block_settings',
+
+					'type' => 'select',
+
+					'choices' => $construction_landing_page_options_pages
+
+			)
+
+	);
+
+	
+
+	/** CTA Button Label */
+
+	$wp_customize->add_setting(
+
+			'construction_landing_page_promotional2_button_label',
+
+			array(
+
+					'default' => '',
+
+					'sanitize_callback' => 'sanitize_text_field',
+
+			)
+
+	);
+
+	
+
+	$wp_customize->add_control(
+
+			'construction_landing_page_promotional2_button_label',
+
+			array(
+
+					'label' => __( 'CTA Button Label', 'construction-landing-page' ),
+
+					'section' => 'construction_landing_page_promotional2_block_settings',
+
+					'type' => 'text',
+
+			)
+
+	);
+
+	
+
+	/** CTA Button Link */
+
+	$wp_customize->add_setting(
+
+			'construction_landing_page_promotional2_button_link',
+
+			array(
+
+					'default' => '',
+
+					'sanitize_callback' => 'esc_url_raw',
+
+			)
+
+	);
+
+	
+
+	$wp_customize->add_control(
+
+			'construction_landing_page_promotional2_button_link',
+
+			array(
+
+					'label' => __( 'CTA Button Link', 'construction-landing-page' ),
+
+					'section' => 'construction_landing_page_promotional2_block_settings',
+
+					'type' => 'text',
+
+			)
+
+	);
+
+	/** Enable/Disable open in new tab in Promotional Section */
+
+	$wp_customize->add_setting(
+
+			'construction_landing_page_ed_open_in_new_tab_section2',
+
+			array(
+
+					'default' => true,
+
+					'sanitize_callback' => 'construction_landing_page_sanitize_checkbox',
+
+			)
+
+	);
+
+	
+
+	$wp_customize->add_control(
+
+			'construction_landing_page_ed_open_in_new_tab_section',
+
+			array(
+
+					'label' => __( 'Open Link in New Tab', 'construction-landing-page' ),
+
+					'section' => 'construction_landing_page_promotional2_block_settings',
+
+					'type' => 'checkbox',
+
+			)
+
+	);
     
 
     /** Portfolio Section */

@@ -528,7 +528,7 @@ a:active {
 --------------------------------------------------------------*/
 .main-navigation {
 	float: right;
-	margin: 7px 45px 0 0;
+	/*margin: 7px 45px 0 0;*/
 }
 
 .main-navigation ul {
@@ -555,12 +555,12 @@ a:active {
 .main-navigation a {
 	display: block;
 	text-decoration: none;
-	color: #fff;
+	color: #fff !important;
 	padding: 0 0 37px;
 }
 
 .main-navigation a:hover,
-.main-navigation a:focus{color: #2eb0ed;}
+.main-navigation a:focus{color: #2eb0ed; text-decoration: underline;}
 
 .main-navigation ul ul {
 	float: left;
@@ -955,9 +955,9 @@ object {
 
 /*header style*/
 .site-header{
-	background: rgba(39, 39, 39, 0.5);
+	background: rgba(39, 39, 39, 0.25);
 	color: #fff;
-	padding: 24px 0 0;
+	padding: 12px 0 4px 0;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -971,12 +971,15 @@ object {
 
 .site-header .site-branding{
 	float: left;
-	margin: 6px 0 0;
 }
 
 .site-header .site-branding .custom-logo-link{
 	float: left;
 	margin-right: 10px;
+}
+.menu-main-container
+{
+	margin-top: 28px;
 }
 
 .site-header .site-branding .text-logo{float: left;}
@@ -1004,16 +1007,15 @@ object {
 	font-weight: 700;
 	color: #fff;
 	border: 1px solid #fff;
-	padding: 7px 27px 11px 23px;
+	padding: 10px;
 	-webkit-transition: all 0.2s;
 	-moz-transition: all 0.2s;
 	transition: all 0.2s;
+	margin-top: -10px;
 }
 
 .site-header .tel-link:hover{
 	text-decoration: none;
-	background: #fff;
-	color: #666;
 }
 
 .site-header .tel-link .fa{
@@ -1075,9 +1077,10 @@ object {
 
 .banner form{
 	background: #2eb0ed;
+	border-radius: 10px;
 	margin-left: 95px;
 	text-align: center;
-	padding: 31px 53px 24px 59px;
+	padding: 30px;
 	position: relative;
 	color: #fff;
 }
@@ -2561,6 +2564,8 @@ object {
 
 .widget.widget_text .textwidget{padding: 0 20px 11px 24px;}
 
+
+
 /*footer style*/
 .site-footer{
 	background: #272727;
@@ -2580,6 +2585,8 @@ object {
 	padding: 65px 0 19px;
 	border-bottom: 1px solid #323232;
 }
+
+.footer-t .widget.widget_text .textwidget{padding: 0 20px 11px 0px;}
 
 .site-footer .column{
 	float: left;
@@ -2655,7 +2662,7 @@ object {
 
 .site-footer .site-info{padding: 25px 0;}
 .site-footer .site-info .copyright{
-	float: left;
+	text-align: center;
 }
 
 .site-footer .site-info .by{

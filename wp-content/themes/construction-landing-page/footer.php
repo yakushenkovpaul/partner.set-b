@@ -56,18 +56,6 @@ if( is_home() || ! $ed_section || ! ( is_front_page()  || is_page_template( 'tem
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a>
 					<?php } ?> 
 				</div>
-				<div class="by">
-
-                     <a href="<?php echo esc_url( 'https://raratheme.com/wordpress-themes/construction-landing-page/' ); ?>" rel="author"><?php esc_html_e( 'Construction Landing Page Theme by: Rara Theme', 'construction-landing-page' ); ?></a>                     
-
-				     <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'construction-landing-page' ) ); ?>"><?php printf( esc_html__( 'Powered by %s', 'construction-landing-page' ), 'WordPress' ); ?></a>
-                    <?php
-                    if ( function_exists( 'the_privacy_policy_link' ) ) {
-                        the_privacy_policy_link();
-                    }
-                    ?>
-				 </div>
-
 			</div>
 
 		</div>

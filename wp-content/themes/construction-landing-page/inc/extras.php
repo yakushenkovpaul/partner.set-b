@@ -79,7 +79,8 @@ function construction_landing_page_phone_link( $menu, $args ){
             
     if( $phone && $args->theme_location == 'primary' ){
         
-        $menu .= '<li><a href="tel:' . preg_replace( '/\D/', '', $phone ) . '" class="tel-link"><span class="fa fa-phone"></span>' . esc_html( $phone ) . '</a></li>';        
+				// $menu .= '<li><a href="tel:' . preg_replace( '/\D/', '', $phone ) . '" class="tel-link"><span class="fa fa-phone"></span>' . esc_html( $phone ) . '</a></li>';        
+				$menu .= '<li><div class="tel-link"><span class="fa fa-phone"></span>' . esc_html( $phone ) . '</div></li>';
                
     }
        
