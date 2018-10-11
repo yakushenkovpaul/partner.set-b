@@ -90,7 +90,7 @@ if(!function_exists('deasil_load_admin_styles')) {
 		}  
 		
 	} 
-	// add_action( 'admin_enqueue_scripts', 'deasil_load_admin_styles' );
+	add_action( 'admin_enqueue_scripts', 'deasil_load_admin_styles' );
 }
 
 /**
