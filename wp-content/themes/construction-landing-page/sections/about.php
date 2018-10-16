@@ -90,7 +90,7 @@ if( $section_title || $posts ){
 
                             <div class="text-holder">
 
-                                <h3 class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                                <h3 class="title blue"><?php the_title(); ?></h3>
 
                                 <?php the_excerpt(); ?>
 

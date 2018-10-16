@@ -112,8 +112,6 @@ if( $section_title || $portfolio_posts ){
 
             									<?php the_excerpt(); ?>
 
-            									<a href="<?php the_permalink(); ?>" class="btn-more"><?php esc_html_e( 'View Detail','construction-landing-page' ); ?></a>
-
             								</div>
 
             							</div>

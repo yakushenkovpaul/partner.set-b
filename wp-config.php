@@ -37,6 +37,8 @@ define('DB_PASSWORD', 'gtgtcLA3@');
 *  MySQL hostname
 */
 define('DB_HOST', 'localhost');
+define('USE_PCONNECT', true);
+define('WP_CACHE', false);
 
 /**
 *  Database Charset to use in creating database tables.

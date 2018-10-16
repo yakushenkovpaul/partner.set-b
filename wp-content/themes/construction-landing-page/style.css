@@ -662,6 +662,22 @@ a:active {
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
+
+.sidr-class-tel-link
+{
+	padding-left: 15px;
+}
+
+.orange
+{
+	color: #f3880a !important;
+}
+
+.blue
+{
+	color: #2eb0ed !important;
+}
+
 /* Text meant only for screen readers. */
 .screen-reader-text {
 	clip: rect(1px, 1px, 1px, 1px);
@@ -1258,6 +1274,11 @@ object {
 	z-index: 2;
 	font-size: 32px;
 	line-height: 46px;
+}
+
+.promotional-block .holder .header h2.main-title
+{
+	padding-bottom: 20px;
 }
 
 .promotional-block .holder strong{
