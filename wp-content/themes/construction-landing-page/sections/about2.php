@@ -82,7 +82,7 @@ if( $section_title || $posts ){
 
                                 <div class="img-holder">
 
-    					           <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'construction-landing-page-about-portfolio', array( 'itemprop' => 'image' ) ); ?></a>
+    					           <?php the_post_thumbnail( 'construction-landing-page-about-portfolio', array( 'itemprop' => 'image' ) ); ?>
 
     	                       </div>
 
